@@ -39,10 +39,6 @@ for filename, alg_data in results.items():
         print(f"{alg:<12} | існує: {exist:.6f} сек | вигаданий: {fake:.6f} сек")
 
 
-   
-
-print("results", results)
-
 md_text = generate_md(results)
 
 with open("search_comparison.md", "w", encoding="utf-8") as f:

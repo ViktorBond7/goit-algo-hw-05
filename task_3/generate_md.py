@@ -2,6 +2,8 @@
 def generate_md(results):
     md = "Порівняння алгоритмів пошуку підрядка\n\n"
 
+    fastest_z_too = None
+
     for text, data in results.items():
         md += f"## Текст: `{text}`\n"
         md += "| Алгоритм     | Існуючий (сек) | Вигаданий (сек) |\n"
