@@ -2,6 +2,7 @@ class HashTable:
     def __init__(self, size):
         self.size = size
         self.table = [[] for _ in range(self.size)]
+        print("self.table", self.table)
 
     def hash_function(self, key):
         return hash(key) % self.size
@@ -38,7 +39,7 @@ class HashTable:
 
 if __name__ == '__main__':
     # Тестуємо нашу хеш-таблицю:
-    H = HashTable(5)
+    H = HashTable(2)
     H.insert("apple", 10)
     H.insert("orange", 20)
     H.insert("banana", 30)
